@@ -4631,12 +4631,12 @@ TRACE_PT("writing Parental Control\n");
 		if (nvram_match("filter_wl_default_x", "DROP"))
 		{
 //			dtype = logdrop;
-			ftype = logaccept;
+			ftype = logdrop;
 		}
 		else
 		{
 //			dtype = logaccept;
-			ftype = logdrop;
+			ftype = logaccept;
 		}
 		if(apply) {
 			v4v6_ok = IPT_V4;
